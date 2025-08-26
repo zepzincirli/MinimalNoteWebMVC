@@ -1,0 +1,9 @@
+﻿@model Note
+
+<h2>Yeni Not Ekle</h2>
+
+<form asp-action="Create" method="post">
+    <input asp-for="Title" placeholder="Başlık giriniz" />
+    <input asp-for="Content" placeholder="İçerik giriniz" />
+    <button type="submit">Kaydet</button>
+</form>

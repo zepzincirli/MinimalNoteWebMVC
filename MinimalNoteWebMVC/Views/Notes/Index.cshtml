@@ -1,0 +1,23 @@
+﻿@model List<Note>
+
+
+<a asp-action="Create">Yeni Not Ekle</a>
+<h2>Notlar</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Başlık</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var not in Model)
+        {
+            <tr>
+                <td>@not.Title</td>
+                <td><a asp-action="Detail" asp-route-id="@not.Id">Detail</a></td>
+                <td><a asp-action="Edit" asp-route-id="@not.Id">Güncelle</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

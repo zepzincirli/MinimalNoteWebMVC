@@ -1,0 +1,12 @@
+﻿@model Note
+
+<a asp-action="Index">Geri</a>
+<h2>Not Detay</h2>
+
+<ul>
+    <li><strong>Başlık: </strong>@Model.Title</li>
+    <li><strong>İçerik: </strong>@Model.Content</li>
+    <li><strong>Tarih:  </strong>@Model.CreatedAt</li>
+</ul>
+
+<a asp-action="Delete" asp-route-id="@Model.Id">Sil</a>
