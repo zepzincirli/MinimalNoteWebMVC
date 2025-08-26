@@ -1,10 +1,10 @@
 ﻿@model Note
 
-<h2>Not Güncelle</h2>
+<h2>Edit Note</h2>
 
 <form asp-action="Edit" method="post">
     <input type="hidden" asp-for="Id"/>
     <input type="text" asp-for="Title"/>
     <input type="text" asp-for="Content"/>
-    <button type="submit">Güncelle</button>
+    <button type="submit">Edit</button>
 </form>

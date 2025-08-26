@@ -1,12 +1,12 @@
 ﻿@model List<Note>
 
 
-<a asp-action="Create">Yeni Not Ekle</a>
-<h2>Notlar</h2>
+<a asp-action="Create">Add New Note</a>
+<h2>Notes</h2>
 <table>
     <thead>
         <tr>
-            <th>Başlık</th>
+            <th>Header</th>
         </tr>
     </thead>
     <tbody>
@@ -15,7 +15,7 @@
             <tr>
                 <td>@not.Title</td>
                 <td><a asp-action="Detail" asp-route-id="@not.Id">Detail</a></td>
-                <td><a asp-action="Edit" asp-route-id="@not.Id">Güncelle</a></td>
+                <td><a asp-action="Edit" asp-route-id="@not.Id">Edit</a></td>
             </tr>
         }
     </tbody>

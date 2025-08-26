@@ -42,7 +42,7 @@ namespace MinimalNoteWebMVC.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ModelState.AddModelError(string.Empty, "Bir hata oluştu.");
+            ModelState.AddModelError(string.Empty, "An error has occurred.");
             return View(note);
         }
 
@@ -90,7 +90,7 @@ namespace MinimalNoteWebMVC.Controllers
             {
                 return RedirectToAction(nameof(Index));
             }
-            ModelState.AddModelError(string.Empty, "Bir hata oluştu.");
+            ModelState.AddModelError(string.Empty, "An error has occurred.");
             return View(note);
         }
     }
